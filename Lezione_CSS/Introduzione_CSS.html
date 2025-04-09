@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link> <href="miostile.css" rel="stylesheet">
+    <style>
+        /* direttamente sul tag: classi generiche */
+        h1 { 
+            color: green;
+            background-color: yellow;
+        }
+        /* classi personalizzare ... PUNTO */
+        .titolonews{
+            color: violet;
+            background-color: black;
+            font-family: verdana;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .coloregrigio{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <!-- CSS: Linguaggio ... nato dopo l'html
+    per aggiungere 2 attributi: style e class ... CSS 
+
+    Cascade Style Sheet: Foglio di stile a cascata
+
+    CSS può essere scritto in 3 modi:
+
+    1. Inline: all'interno del tag ... attributo style
+    2. Blocco: all'interno della pagina ... tag <style> (all'interno del tag <head>)
+    3. File esterno: con estensione .css ... tag <link> (all'interno del tag <head>)
+    -->
+    <h1><font color="red"> Titolo della pagina</font></h1> non esiste più
+
+    <h1 style="color:red"> Titolo della pagina CSS</h1>
+
+    <h1 class="titolonews"> Titolo della pagina CSS</h1>
+
+    <div class="titolonews"> descrizione della news </div>
+
+    <div class="paperino coloregrigio"> scritta paperino</div>
+
+    div class="paperino"> scritta paperino</div>
+       
+</body>
+</html>
