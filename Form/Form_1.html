@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:red"> BENVENUTI NEL NOSTRO SITO </h1>
+    <p> "Unisciti alla nostra community!
+        Registrati in pochi semplici passi e raccontaci qualcosa su di te. Vogliamo creare <br>
+        uno spazio dove ognunopossa condividere la propria storia, le passioni e i progetti. <br>
+        La tua voce è importante per noi: facci sapere chi sei,cosa ti piace e cosa ti rende unico. <br>
+        Inizia ora a costruire il tuo profilo e diventa parte della nostra famiglia!" </p>
+    <form method="post" action="esegui.php">
+            Nome <input type="text" name="nome"><br>
+            Cognome <input type="text" name="cognome"><br>
+            Indirizzo email <input type="text" name="indirizzo email"><br>
+            Crea una password <input type="text" name="crea una password">
+            Ripeti la password <input type="text" name="ripeti la password"><br>
+            Sesso
+            <input type="radio" name="sesso" value="M"> M
+            <input type="radio" name="sesso" value="F"> F<br>
+            Come ci hai conosciuto 
+            <select name="selezione">
+            <option value="I">Consigliato da amici</option>
+            <option value="E">Social</option>
+            <option value="E">TV</option>
+            </select><br>
+            Parlaci di te ! <br>
+            <textarea name="commento" rows="5" cols="30"></textarea>
+            <br><br>
+            <label>
+                <input type="checkbox" name="terms" required>
+                Accetto i <a href="termini.html" target="_blank">termini e le condizioni d'uso</a>
+              </label>
+              <br>
+            
+            <!-- SUBMIT -->
+            <input type="submit" name="invia" value="Crea Account">
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
