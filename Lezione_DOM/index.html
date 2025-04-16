@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        document.getElementById("paperino").innerHTML = "CIAO CIAO";
+        // INIZIA JAVASCRIPT
+        function test(){
+            document.body.style.backgroundColor="green"; //DOM
+
+            let x= document.getElementById("miotitolo"); //SOLO COSI SI RECUPERA L'ELEMENTO
+
+            x.style.backgroundColor = "grey"; // MODIFICARE CSS
+             
+            x.innerHTML = "ARRIVEDERCI"; //MODIFICARE CONTENUTO
+            x.setAttribute("align", "center"); // CREA ATTRIBUTO
+
+            document.createElement("h1");
+        }
+    </script>
+</head>
+<body>
+    <h1>
+        Internet (Web) ... DOM (Browser... 3 html/css/javascript)
+
+        
+        HTML : Linguaggio posiziona gli elementi 
+        CSS : Linguaggio grafico ... style e class
+        
+        DOM : Libreria ... dentro il browser... modificare html dinamicamente
+
+                document (attrivuti... variabili e funzioni... azioni)
+                
+                HTML : EVENTI (mouse e tastiera) -> onclick
+
+                Come posso usare il DOM? HTML -> DOM
+                                         HTML -> JAVASCRIPT -> DOM
+
+        JS : inline (NON SI USA) ... blocco
+
+        DOM : 1 Recupero l'elemento
+              2 Decido : modificare CSS 
+                         gestire attributi
+                         creare nuovi elementi
+                         modificare il contenuto
+    </h1>
+
+    <h1 onclick="document.body.style.backgroundColor='red'"><a href="#">Clicca Qui</a></h1>
+    <h1 oncliclk="test()" id="miotitolo"><a href="#">Clicca qui JS</a> </h1>
+</body>
+</html>
