@@ -1,46 +1,47 @@
-console.log("node");
-console.log("ciao");
 
-const arr1=[1,2,3];
+import Contatore from "./contatore";
+function App() {
+    const [persone, setPersona] = useState(anagrafica);
 
-arr1.push(4);
+    const [persona, setPersona] = useState (
+        {
+            id: "1",
+            nome: "Roberto",
+            cognome: "del",
+            età: 48,
+        }
+    )
 
-console.log(arr1);
+    const data = new Date();
 
-const a=4;
-a=5;
+    const[saluta, setSaluta] = useState("Ciao");
 
-arr2.unshift(o);
+    const salutami = () => {
+        console.log(saluta);
+        setSaluta("Arrivederci");
+        console.log(saluta);
+    };
+    const eliminaOggetto = {id} => {
+        const newAna = persone.filter((ang) => ang.id !== id);
 
-console.log(arr1,arr2)
+        setPersona(newAna);
 
-const prof={
-    "first name":"Roberto",
-    cognome:"Delisio",
-    età: 48,
-    indirizzo: {
-        via:"Cesare Pavese",
-        città:"Roma"
+        console.log(id);
+  
+    };
+
+    const compleanno=() => {
+        let anni=persona.eta+1
+
+        setPersona({
+            ...persona,
+            eta:anni
+        })
     }
-};
 
-console.log(prof.indirizzo.via);
-
-const prof2= new Object();
-
-prof2.cognome="Rob";
-prof2.cognome="Del";
-
-console.log(prof2);
-
-function persona(nome= '', cognome= ''){
-    this.nome=nome;
-    this.cognome=cognome;
+    return (
+        <div className="App"></div>
+        <h1>Primma App React</h1>
+        <Contatore></Contatore>
+    )
 }
-
-// persona.prototype.telefono="12345"
-
-const Robdel=new persona('Rob', 'Del');
-const mariorossi=new persona('Mario', "Rossi");
-
-
